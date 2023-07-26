@@ -1,0 +1,11 @@
+package Logicalprogramming;
+
+public class DisariumNoDriver {
+
+	public static void main(String[] args) {
+		DisariumNo.DNo(175);
+		
+		}
+}
+
+

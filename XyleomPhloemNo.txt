@@ -1,0 +1,40 @@
+package Logicalprogramming;
+
+public class XyleomPhloemNo {
+	public static boolean XyPhNo(int n) {
+	int count1=0;
+	int count2=0;
+	int sum1=0;
+	int sum2=0;
+	int temp=n;
+	
+	while(n>0) {
+		n=n/10;
+		count1++;
+	}
+	while(n>0) {
+		count2++;
+		int lastdigit=n%10;
+		if(count2==count1||count2==1) {
+			sum1=sum1+lastdigit;
+		}
+		else {
+			sum2=sum2+lastdigit;
+		}
+		n=n/10;
+	}
+	if(sum1==n) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+	public static void main(String[] args) {
+		System.out.println(XyPhNo(75558));
+	}
+}
+	
+
+

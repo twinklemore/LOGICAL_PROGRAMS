@@ -1,0 +1,28 @@
+package Logicalprogramming;
+
+public class Palindrome {
+
+	public static boolean Palindrome(int n) {
+		int temp;
+		int sum=0;
+		int rev;
+		
+		 temp=n;
+		 while(n>0) {
+			 rev=n%10;
+			 sum=sum*10+rev;
+			 n=n/10;
+		 }
+		
+if(temp==sum)
+{
+	return true;
+}else {
+	return false;
+}
+	}
+	public static void main(String args[]) {
+		System.out.println(Palindrome(242));
+	}
+
+}
